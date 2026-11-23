@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CropRelief — Flood &amp; Crop Damage Relief Platform</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="login" class="landing-body">
+  <!-- Top SaaS Navbar -->
+  <header class="landing-nav">
+    <div class="nav-brand">
+      <span class="brand-dot"></span>
+      <strong>CropRelief</strong>
+    </div>
+    <nav class="nav-links">
+      <a href="#preview-card">Overview</a>
+      <a href="#auth-panel">Farmer Portal</a>
+      <a href="#auth-panel">Official Access</a>
+    </nav>
+    <div class="nav-actions">
+      <button type="button" class="btn ghost-pill" data-act="lang">اردو</button>
+      <button type="button" class="btn accent-pill" data-act="toggle" data-i18n="Register">Register</button>
+    </div>
+  </header>
+
+  <!-- Hero & Blended Glassmorphic Auth Section -->
+  <section class="hero-stage">
+    <div class="hero-top-grid">
+      <div class="hero-copy">
+        <div class="trust-pill">
+          <span class="pulse-dot"></span>
+          <span>Verified Flood Relief System — Punjab &amp; Sindh</span>
+        </div>
+        <h1>Crop damage intelligence for rapid farmer relief</h1>
+        <p class="hero-lead" data-i18n="Flood crop damage reporting">
+          Offline-first flood damage reporting, GPS field verification, and transparent compensation approval built for farmers and relief officers.
+        </p>
+
+        <div class="hero-highlights">
+          <div class="highlight-item">
+            <strong>Offline-First Sync</strong>
+            <span>Draft claims without signal; auto-submit on reconnect</span>
+          </div>
+          <div class="highlight-item">
+            <strong>Priority Triage</strong>
+            <span>Automated severity scoring by crop loss and flood zone</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blended Dark-Glass Auth Panel -->
+      <main id="auth-panel" class="auth-glass-card">
+        <form id="login-form" data-form="login" novalidate>
+          <div class="auth-card-head">
+            <div>
+              <span class="eyebrow">Portal Access</span>
+              <h2 data-i18n="Login">Login</h2>
+            </div>
+            <button type="button" class="link-glass" data-act="toggle" data-i18n="New farmer? Register here">New farmer? Register here</button>
+          </div>
+
+          <div class="auth-stack">
+            <label>
+              <span data-i18n="Mobile number">Mobile number</span>
+              <input name="mobile" placeholder="03001111111" inputmode="numeric" />
+            </label>
+            <div class="auth-row-two">
+              <label>
+                <span data-i18n="Password">Password</span>
+                <input name="password" type="password" placeholder="pass123" />
+              </label>
+              <label>
+                <span data-i18n="OTP ">OTP (demo: 1234)</span>
+                <input name="otp" inputmode="numeric" placeholder="1234" />
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn primary-glow block">
+            <span data-i18n="Login">Login</span>
+          </button>
+        </form>
+
+        <form id="register-form" data-form="register" hidden novalidate>
+          <div class="auth-card-head">
+            <div>
+              <span class="eyebrow">Farmer Onboarding</span>
+              <h2 data-i18n="Register">Register</h2>
+            </div>
+            <button type="button" class="link-glass" data-act="toggle" data-i18n="Back to login">Back to login</button>
+          </div>
+
+          <div class="auth-grid-inputs">
+            <label>
+              <span data-i18n="Full name">Full name</span>
+              <input name="name" placeholder="Muhammad Tariq" />
+            </label>
+            <label>
+              <span>CNIC</span>
+              <input name="cnic" placeholder="33100-1234567-1" />
+            </label>
+            <label>
+              <span data-i18n="Mobile number">Mobile number</span>
+              <input name="mobile" inputmode="numeric" placeholder="03019876543" />
+            </label>
+            <label>
+              <span data-i18n="Password">Password</span>
+              <input name="password" type="password" placeholder="Min 6 characters" />
+            </label>
+            <label>
+              <span data-i18n="Khasra number">Khasra number</span>
+              <input name="khasra" placeholder="KH-409" />
+            </label>
+            <label>
+              <span data-i18n="Acreage">Acreage</span>
+              <input name="acres" type="number" step="0.1" placeholder="4.5" />
+            </label>
+            <label>
+              <span data-i18n="District">District</span>
+              <select name="district">
+                <option>Faisalabad</option>
+                <option>Lahore</option>
+                <option>Multan</option>
+                <option>Sargodha</option>
+              </select>
+            </label>
+            <label>
+              <span data-i18n="Flood zone">Flood zone</span>
+              <select name="zone">
+                <option>High</option>
+                <option>Medium</option>
+                <option>Low</option>
+              </select>
+            </label>
+          </div>
+
+          <button type="submit" class="btn primary-glow block">
+            <span data-i18n="Register">Register</span>
+          </button>
+        </form>
+      </main>
+    </div>
+
+    <!-- Floating Dark-Framed System Preview Showcase -->
+    <div id="preview-card" class="showcase-shell">
+      <div class="showcase-banner">
+        <div class="showcase-topbar">
+          <div class="showcase-brand"><span class="brand-dot"></span> CropRelief Command View</div>
+          <div class="showcase-status"><span class="pulse-dot"></span> Active Flood Monitoring</div>
+        </div>
+
+        <div class="showcase-main">
+          <div class="showcase-metric-big">
+            <span>Verified Relief Approved</span>
+            <strong>PKR 4,850,000</strong>
+          </div>
+
+          <div class="showcase-mini-grid">
+            <div class="glass-tile">
+              <span>Claims Verified</span>
+              <b>142</b>
+            </div>
+            <div class="glass-tile">
+              <span>Avg. Turnaround</span>
+              <b>4.2 Days</b>
+            </div>
+            <div class="glass-tile">
+              <span>Duplicates Blocked</span>
+              <b>100%</b>
+            </div>
+            <div class="glass-tile">
+              <span>Offline Sync Rate</span>
+              <b>99.4%</b>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="showcase-bottom-cards">
+        <div class="dark-subcard">
+          <h3>Priority Triage Engine</h3>
+          <p class="muted-light">Automatic severity scoring (Damage % × Flood Zone Factor) routes critical plots to field surveyors first.</p>
+        </div>
+        <div class="dark-subcard">
+          <h3>Desk &amp; Field Verification</h3>
+          <p class="muted-light">Small claims up to 5 acres qualify for rapid desk review; larger plots undergo GPS-verified field inspection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="toast"></div>
+
+  <!-- Infrastructure & Localization -->
+  <script src="js/Storage.js"></script>
+  <script src="js/I18N.js"></script>
+  <!-- Domain & Actor Classes (Matching UML Class Diagram) -->
+  <script src="js/Notification.js"></script>
+  <script src="js/FloodZone.js"></script>
+  <script src="js/FloodEvent.js"></script>
+  <script src="js/LandPlot.js"></script>
+  <script src="js/SurveyReport.js"></script>
+  <script src="js/CompensationClaim.js"></script>
+  <script src="js/Appeal.js"></script>
+  <script src="js/DamageReport.js"></script>
+  <script src="js/User.js"></script>
+  <script src="js/Farmer.js"></script>
+  <script src="js/FieldSurveyor.js"></script>
+  <script src="js/AgricultureOfficer.js"></script>
+  <script src="js/DistrictOfficer.js"></script>
+  <script src="js/Administrator.js"></script>
+  <!-- Presentation & Event Controller -->
+  <script src="js/UI.js"></script>
+  <script src="js/App.js"></script>
+</body>
+</html>
