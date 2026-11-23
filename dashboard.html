@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CropRelief — Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="dashboard" class="dash-body">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <strong class="brand"><span class="brand-dot"></span> CropRelief</strong>
+      <div class="topright">
+        <span id="who" class="chip"></span>
+        <button type="button" id="net-toggle" class="btn ghost" data-act="net">
+          <span class="net-indicator online"></span> Online
+        </button>
+        <button type="button" class="btn ghost" data-act="lang">اردو</button>
+        <button type="button" class="btn ghost" data-act="logout" data-i18n="Logout">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="view"></main>
+  <div id="toast"></div>
+
+  <!-- Infrastructure & Localization -->
+  <script src="js/Storage.js"></script>
+  <script src="js/I18N.js"></script>
+  <!-- Domain & Actor Classes (Matching UML Class Diagram) -->
+  <script src="js/Notification.js"></script>
+  <script src="js/FloodZone.js"></script>
+  <script src="js/FloodEvent.js"></script>
+  <script src="js/LandPlot.js"></script>
+  <script src="js/SurveyReport.js"></script>
+  <script src="js/CompensationClaim.js"></script>
+  <script src="js/Appeal.js"></script>
+  <script src="js/DamageReport.js"></script>
+  <script src="js/User.js"></script>
+  <script src="js/Farmer.js"></script>
+  <script src="js/FieldSurveyor.js"></script>
+  <script src="js/AgricultureOfficer.js"></script>
+  <script src="js/DistrictOfficer.js"></script>
+  <script src="js/Administrator.js"></script>
+  <!-- Presentation & Event Controller -->
+  <script src="js/UI.js"></script>
+  <script src="js/App.js"></script>
+</body>
+</html>
