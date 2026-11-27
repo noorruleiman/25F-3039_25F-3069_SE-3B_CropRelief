@@ -8,7 +8,7 @@
 - **Zunaira Ahmed** (`25F-3069`)
 
 ## Live Deployed Site
-- **GitHub Pages URL:** ` https://noorruleiman.github.io/25F-3039_25F-3069_SE-3B_CropRelief/`
+- GitHub Pages: <https://noorruleiman.github.io/25F-3039_25F-3069_SE-3B_CropRelief/>
 
 ## How to Run Locally
 1. Clone or download this repository to your computer.
